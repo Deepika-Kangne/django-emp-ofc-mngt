@@ -14,4 +14,7 @@ urlpatterns = [
     path('pricing.html', views.pricing, name='pricing'),        # Pricing
     path('blog.html', views.blog, name='blog'),                 # Blog
     path('contact.html', views.contact, name='contact'),        # Contact
+    # urls.py
+    path('summarizer.html', views.meeting_summarizer, name='meeting_summarizer')
+
 ]

@@ -45,6 +45,9 @@
     <li>
       <a href="{% url 'contact' %}" class="{% if request.path == '/contact.html' %}active{% endif %}">Contact</a>
     </li>
+     <li>
+      <a href="{% url 'meeting_summarizer' %}" class="{% if request.path == '/summarizer.html' %}active{% endif %}">Meeting Summarizer</a>
+    </li>
   </ul>
   <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
 </nav>

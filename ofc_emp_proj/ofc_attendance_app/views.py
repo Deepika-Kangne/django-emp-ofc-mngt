@@ -29,3 +29,13 @@ def blog(request):
 
 def contact(request):
     return render(request, 'contact.html')
+
+from .summarizer import summarize_text  # your summarizer module
+
+def meeting_summarizer(request):
+    summary = None
+    if request.method == 'POST':
+        transcript = request.POST.get('transcript')
+        if transcript:
+            summary = summarize_text(transcript)
+    return render(request, 'meeting_summarizer.html', {'summary': summary})
