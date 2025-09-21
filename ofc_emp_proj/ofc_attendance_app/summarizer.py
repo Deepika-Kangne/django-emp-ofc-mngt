@@ -1,5 +1,8 @@
 import requests
 import json
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 def summarize_text(input_text):
     url = "https://api-inference.huggingface.co/models/facebook/bart-large-cnn"
